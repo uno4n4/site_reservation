@@ -1,0 +1,25 @@
+body {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* HEADER */
+.bg-head {
+    background-color: rgba(255, 218, 185, 0.635);
+    border-radius: 5px;
+}
+
+
+
+/* TABLE */
+
+
+/* BG COLONNE */
+.bg-style {
+  background-color: rgba(255, 218, 185, 0.635);
+  border-radius: 10px;
+}

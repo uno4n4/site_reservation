@@ -9,43 +9,43 @@
     <title>Site de réservation</title>
 </head>
 <body style="background-image: url(./image/back.jpg);">
-    <header class="container bg-success">
-        <h1 class="display-6 text-center">BOOKING HOTEL</h1>
-        <p class="text-center">Indiquez vos dates de réservation - Toute annulation doit se faire 48h avant</p>
+    <header class="container mt-3 bg-head">
+        <h1 class="display-6 text-center text-decoration-underline text-white">BOOKING HOTEL</h1>
+        <p class="text-center fw-bold text-white">Indiquez vos dates de réservation - Toute annulation doit se faire 48h avant</p>
     </header>
 
-    <article class="row mt-4">
-        <div class="col col-md-6">
+    <article class="row mt-4 container-fluid offset-1 mb-5">
+        <div class="col col-md-4">
             <table class="table table-bordered">
                 <tbody>
                     <tr>
-                        <th scope="row">Image</th>
-                        <td class="text-danger text-center">France - Etranger</td>
+                        <th scope="row" colspan="2" class="text-center">Image</th>
+                        <td colspan="3" class="text-danger text-center fw-bold">France - Etranger</td>
                     </tr>
                     <tr>
-                        <th scope="row"><p class="text-center">Lieu de séjour</p></th>
-                        <td class="bg-danger">
-                            <div class="col text-center">
+                        <th scope="row" colspan="2"><p class="text-center">Lieu de séjour</p></th>
+                        <td colspan="2" class="bg-danger">
+                            <div class="col">
                                 <input type="text">
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row"><p class="text-center">Arrivée</p>
+                        <th scope="row" colspan="2"><p class="text-center">Arrivée</p>
                             <div class="input-group">
                                 <div class="inout-group-prepend mx-auto">
                                     <input type="date" id="arrive">
                                 </div>
                             </div>
-                            <td>
-                                <p class="text-center fw-bold">Départ</p>
-                                <div class="input-group">
-                                    <div class="input-group-prepend mx-auto">
-                                        <input type="date" id="retour">
-                                    </div>
-                                </div>
-                            </td>
                         </th>
+                        <td colspan="2">
+                            <p class="text-center fw-bold">Départ</p>
+                            <div class="input-group">
+                                <div class="input-group-prepend mx-auto">
+                                    <input type="date" id="retour">
+                                </div>
+                            </div>
+                         </td>
                     </tr>
                     <tr>
                         <th scope="row">Adulte</th>
@@ -66,13 +66,13 @@
                         <td><button type="button" id="moins-chambre">-</button></td>
                     </tr>
                     <tr>
-                        <th scope="row"><button type="button" class="btn btn-success" id="rechercher">Rechercher</button></th>
+                        <th scope="row" colspan="6"><button type="button" class="btn btn-success btn-lg" id="rechercher">Rechercher</button></th>
                     </tr>
                     <tr>
-                        <th scope="row"><button type="button" class="btn btn-primary" id="effacer">Effacer</button></th>
+                        <th scope="row" colspan="6"><button type="button" class="btn btn-primary btn-lg" id="effacer">Effacer</button></th>
                     </tr>
                     <tr>
-                        <th scope="row">
+                        <th scope="row" colspan="6">
                             <div class="input-group">
                                 <input type="checkbox" class="form-check-input">
                                 <label class="form-check-label ms-2 fw-normal">Je voyage pour le travail</label>
@@ -84,9 +84,9 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-        <div class="col col-md-6">
-            <h3 class="fw-bold text-danger">Confirmation réservation</h3>
+        </div> 
+        <div class="col col-md-4 bg-style offset-2 mb-3">
+            <h3 class="fw-bold text-white">Confirmation réservation</h3>
             <p class="fw-bold">Nombre(s) d'adulte(s) :</p>
             <p class="fw-bold" id="nb-adulte">2</p>
 
