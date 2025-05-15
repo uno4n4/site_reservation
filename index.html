@@ -18,16 +18,18 @@
     <article class="row mt-4 container-fluid offset-1 mb-5">
         <div class="col col-md-4">
             <table class="table table-bordered">
-                <tbody>
+                <thead>
                     <tr>
-                        <th scope="row" colspan="2" class="text-center">Image</th>
+                        <th scope="row" colspan="2" class="text-center"><img src="./image/hotel.png" class="image"></th>
                         <td colspan="3" class="text-danger text-center fw-bold">France - Etranger</td>
                     </tr>
+                </thead>
+                <tbody>
                     <tr>
-                        <th scope="row" colspan="2"><p class="text-center">Lieu de séjour</p></th>
-                        <td colspan="2" class="bg-danger">
-                            <div class="col">
-                                <input type="text">
+                        <th scope="row" colspan="2" class="text-center"><p>Lieu de séjour</p></th>
+                        <td colspan="2">
+                            <div class="d-flex">
+                                <input type="text" class="mx-auto">
                             </div>
                         </td>
                     </tr>
@@ -35,7 +37,7 @@
                         <th scope="row" colspan="2"><p class="text-center">Arrivée</p>
                             <div class="input-group">
                                 <div class="inout-group-prepend mx-auto">
-                                    <input type="date" id="arrive">
+                                    <input type="date" id="arrive" class="date">
                                 </div>
                             </div>
                         </th>
@@ -43,38 +45,38 @@
                             <p class="text-center fw-bold">Départ</p>
                             <div class="input-group">
                                 <div class="input-group-prepend mx-auto">
-                                    <input type="date" id="retour">
+                                    <input type="date" id="retour" class="date">
                                 </div>
                             </div>
                          </td>
                     </tr>
                     <tr>
                         <th scope="row">Adulte</th>
-                        <td id="number-adulte">0</td>
-                        <td><button type="button" id="plus-adulte">+</button></td>
-                        <td><button type="button" id="moins-adulte">-</button></td>
+                        <td id="number-adulte" class="text-center">0</td>
+                        <td class="text-center"><button type="button" id="plus-adulte" class="boutons-plus">+</button></td>
+                        <td class="text-center"><button type="button" id="moins-adulte" class="boutons-moins">-</button></td>
                     </tr>
                     <tr>
                         <th scope="row">Enfant</th>
-                        <td id="number-enfant">0</td>
-                        <td><button type="button" id="plus-enfant">+</button></td>
-                        <td><button type="button" id="moins-enfant">-</button></td>
+                        <td id="number-enfant" class="text-center">0</td>
+                        <td class="text-center"><button type="button" id="plus-enfant" class="boutons-plus">+</button></td>
+                        <td class="text-center"><button type="button" id="moins-enfant" class="boutons-moins">-</button></td>
                     </tr>
                     <tr>
                         <th scope="row">Chambre</th>
-                        <td id="number-chambre">0</td>
-                        <td><button type="button" id="plus-chambre">+</button></td>
-                        <td><button type="button" id="moins-chambre">-</button></td>
+                        <td id="number-chambre" class="text-center">0</td>
+                        <td class="text-center"><button type="button" id="plus-chambre" class="boutons-plus">+</button></td>
+                        <td class="text-center"><button type="button" id="moins-chambre" class="boutons-moins">-</button></td>
                     </tr>
                     <tr>
-                        <th scope="row" colspan="6"><button type="button" class="btn btn-success btn-lg" id="rechercher">Rechercher</button></th>
+                        <th scope="row" colspan="6" class="text-center"><button type="button" class="btn boutons-plus btn-rounded" id="rechercher">Rechercher</button></th>
                     </tr>
                     <tr>
-                        <th scope="row" colspan="6"><button type="button" class="btn btn-primary btn-lg" id="effacer">Effacer</button></th>
+                        <th scope="row" colspan="6" class="text-center"><button type="button" class="btn boutons-moins btn-rounded" id="effacer">Effacer</button></th>
                     </tr>
                     <tr>
                         <th scope="row" colspan="6">
-                            <div class="input-group">
+                            <div class="input-group justify-content-center fs-5">
                                 <input type="checkbox" class="form-check-input">
                                 <label class="form-check-label ms-2 fw-normal">Je voyage pour le travail</label>
                             </div>
@@ -103,7 +105,7 @@
     </article>
 
     <div class="row">
-        <div class="col bg-danger text-warning text-center fw-bold">Indiquez vos dates de réservation - Toute annulation doit se faire 24h avant</div>
+        <div class="col bg-foot text-center fw-bold fs-4">Indiquez vos dates de réservation - Toute annulation doit se faire 24h avant</div>
     </div>
 </body>
 </html>

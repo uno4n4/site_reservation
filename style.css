@@ -16,10 +16,65 @@ body {
 
 
 /* TABLE */
+.image {
+  width: 30px;
+}
 
+
+/* CALENDAR */ 
+.date {
+  background-color:rgba(255, 173, 80, 0.653);
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+}
+
+
+/* BOUTON + */
+.boutons {
+  border-radius: 90%;
+}
+
+.boutons-plus{
+  background-color: rgba(255, 218, 185, 0.635);
+  color:rgb(40, 35, 29);
+  border-color: white;
+}
+
+.boutons-moins{
+  background-color: rgba(186, 85, 211, 0.422);
+  color: rgb(40, 35, 29);
+  border-color: white;
+}
+
+.boutons-plus:hover{
+  background-color: rgb(249, 215, 185);
+  color:rgb(40, 35, 29);
+  border-color: white;
+}
+
+.boutons-moins:hover{
+  background-color: rgb(186, 85, 211);
+  color: rgb(40, 35, 29);
+  border-color: white;
+}
 
 /* BG COLONNE */
 .bg-style {
   background-color: rgba(255, 218, 185, 0.635);
   border-radius: 10px;
+}
+
+
+
+/* BOUTONS */ 
+.btn-rounded {
+  border-radius: 20px;
+  width: 85%;
+}
+
+/* FOOTER */ 
+.bg-foot {
+  background-color: rgba(255, 234, 0, 0.532);
+  
 }
