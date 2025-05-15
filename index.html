@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <title>Site de réservation</title>
+    <script src="reservation.js" defer></script>
 </head>
 <body style="background-image: url(./image/back.jpg);">
     <header class="container mt-3 bg-head">
@@ -49,19 +50,19 @@
                     </tr>
                     <tr>
                         <th scope="row">Adulte</th>
-                        <td id="number-adulte">2</td>
+                        <td id="number-adulte">0</td>
                         <td><button type="button" id="plus-adulte">+</button></td>
                         <td><button type="button" id="moins-adulte">-</button></td>
                     </tr>
                     <tr>
                         <th scope="row">Enfant</th>
-                        <td id="number-enfant">2</td>
+                        <td id="number-enfant">0</td>
                         <td><button type="button" id="plus-enfant">+</button></td>
                         <td><button type="button" id="moins-enfant">-</button></td>
                     </tr>
                     <tr>
                         <th scope="row">Chambre</th>
-                        <td id="number-chambre">2</td>
+                        <td id="number-chambre">0</td>
                         <td><button type="button" id="plus-chambre">+</button></td>
                         <td><button type="button" id="moins-chambre">-</button></td>
                     </tr>
@@ -88,16 +89,16 @@
         <div class="col col-md-4 bg-style offset-2 mb-3">
             <h3 class="fw-bold text-white">Confirmation réservation</h3>
             <p class="fw-bold">Nombre(s) d'adulte(s) :</p>
-            <p class="fw-bold" id="nb-adulte">2</p>
+            <p class="fw-bold" id="nb-adulte"></p>
 
             <p class="fw-bold">Nombre(s) d'enfant(s) :</p>
-            <p class="fw-bold" id="nb-enfant">2</p>
+            <p class="fw-bold" id="nb-enfant"></p>
 
             <p class="fw-bold">Nombre(s) de chambre(s) :</p>
-            <p class="fw-bold" id="nb-chambre">2</p>
+            <p class="fw-bold" id="nb-chambre"></p>
 
             <p class="fw-bold">Voyage pour le travail :</p>
-            <p class="fw-bold" id="voyage-travail">Non</p>
+            <p class="fw-bold" id="voyage-travail"></p>
         </div>
     </article>
 
