@@ -8,6 +8,96 @@
     <title>Site de réservation</title>
 </head>
 <body>
-    
+    <header class="container bg-success">
+        <h1 class="display-6 text-center">BOOKING HOTEL</h1>
+        <p class="text-center">Indiquez vos dates de réservation - Toute annulation doit se faire 48h avant</p>
+    </header>
+
+    <article class="row mt-4">
+        <div class="col col-md-6">
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th scope="row">Image</th>
+                        <td class="text-danger text-center">France - Etranger</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><p class="text-center">Lieu de séjour</p></th>
+                        <td class="bg-danger"><p class="text-center" id="lieu"></p></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><p class="text-center">Arrivée</p>
+                            <div class="input-group">
+                                <div class="inout-group-prepend mx-auto">
+                                    <input type="date" id="arrive">
+                                </div>
+                            </div>
+                            <td>
+                                <p class="text-center fw-bold">Départ</p>
+                                <div class="input-group">
+                                    <div class="input-group-prepend mx-auto">
+                                        <input type="date" id="retour">
+                                    </div>
+                                </div>
+                            </td>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Adulte</th>
+                        <td id="number-adulte">2</td>
+                        <td><button type="button" id="plus-adulte">+</button></td>
+                        <td><button type="button" id="moins-adulte">-</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Enfant</th>
+                        <td id="number-enfant">2</td>
+                        <td><button type="button" id="plus-enfant">+</button></td>
+                        <td><button type="button" id="moins-enfant">-</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Chambre</th>
+                        <td id="number-chambre">2</td>
+                        <td><button type="button" id="plus-chambre">+</button></td>
+                        <td><button type="button" id="moins-chambre">-</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><button type="button" class="btn btn-success" id="rechercher">Rechercher</button></th>
+                    </tr>
+                    <tr>
+                        <th scope="row"><button type="button" class="btn btn-primary" id="effacer">Effacer</button></th>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <div class="input-group">
+                                <input type="checkbox" class="form-check-input">
+                                <label class="form-check-label ms-2 fw-normal">Je voyage pour le travail</label>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <div class="container invisible"></div>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col col-md-6">
+            <h3 class="fw-bold text-danger">Confirmation réservation</h3>
+            <p class="fw-bold">Nombre(s) d'adulte(s) :</p>
+            <p class="fw-bold" id="nb-adulte">2</p>
+
+            <p class="fw-bold">Nombre(s) d'enfant(s) :</p>
+            <p class="fw-bold" id="nb-enfant">2</p>
+
+            <p class="fw-bold">Nombre(s) de chambre(s) :</p>
+            <p class="fw-bold" id="nb-chambre">2</p>
+
+            <p class="fw-bold">Voyage pour le travail :</p>
+            <p class="fw-bold" id="voyage-travail">Non</p>
+        </div>
+    </article>
+
+    <div class="row">
+        <div class="col bg-danger text-warning text-center fw-bold">Indiquez vos dates de réservation - Toute annulation doit se faire 24h avant</div>
+    </div>
 </body>
 </html>
